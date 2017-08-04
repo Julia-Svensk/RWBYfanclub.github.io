@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="bilder/rwby4.png">
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>RWBY Episodes</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+   <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">RWBY FANCLUBB</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="RWBYepisode.html">Episodes</a></li>
+                    <li><a href="RWBYChibbi.html">Chibi episode</a></li>
+                    <li><a href="RWBYchat.html">Chat</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a id="login" href="RWBYlogin.html">Log in</a></li>
+            </div>
+        </nav>
+
+ <div class="col-sm-2">
+    <ul class="noDots">
+        <li><a id="lenk" href="RWBYvol1.html">Volume 1</a></li>
+    </ul>
+</div>
+
+<br>
+<br>
+
+
+<iframe width="260" height="115" src="https://www.youtube.com/embed/tNAX4EQF2r8?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/PzPZ6joXq5Y?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/bdiV-w3yXos?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/mj3jfqPwJEk?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/a1EuyliSO_Q?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/9BJc7nrMnc4?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/nur1pCHD4hU?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/i7wkw3yEbvQ?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/0-f-mGvOba8?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/AvUT2rHKJDs?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/bSdejzDaQEU?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/GJGSywhNk8Q?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/lD4x6NiTiM4?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/-PE66fmjZ0I?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/CUYhvPoxuas?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/-p4iS_p3b8E?list=PLrU_yznjZVGs346v2bVMZiuwUynlL3nIL" frameborder="0" allowfullscreen></iframe>
+<br>
+ <div class="col-sm-2">
+                <ul class="noDots">
+                    <li><a id="lenk3" href="RWBYvol3.html">Volume 3</a></li>
+                    <li><a id="lenk4" href="RWBYvol4.html">Volume 4</a></li>
+                </ul>
+            </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

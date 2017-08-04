@@ -1,0 +1,76 @@
+nav{
+	color: red;
+}
+
+body {
+	background-color: darkgrey;
+}
+
+#chatbild {
+	margin: 20px;
+	/*position: absolute;
+	top: 30px;
+	left: 750px;*/
+}
+
+h4{
+color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: lightblue;
+    font-size: 25px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: darkred;
+    font-size: 35px;
+}
+
+#bild {
+	position: absolute;
+	top: -530px;
+	left: 850px;
+	width: 350px;
+}
+
+#bild2 {
+position: absolute;
+	top: 80px;
+	left: 750px;
+}
+
+#lenk {
+	color: darkred;
+}
+
+#lenk2 {
+	color: lightblue;
+}
+
+#lenk3 {
+	color: black;
+}
+
+#lenk4 {
+	color: yellow;
+}
+
+#login {
+	color: lightblue;
+}
+
+#chat {
+	margin: 20px;
+}
+.noDots{
+	list-style: none;
+}
+
+#chat {
+	display:flex;
+	justify-content: center;
+	background-color: white;
+	border: white 5px solid;
+
+}

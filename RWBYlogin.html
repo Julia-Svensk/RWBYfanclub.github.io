@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<link rel="icon" type="image/png" href="bilder/rwby4.png">
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>RWBY log in</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app">
+
+   <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">RWBY FANCLUBB</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="RWBYepisode.html">Episodes</a></li>
+                    <li><a href="RWBYChibbi.html">Chibi episodes</a></li>
+                    
+                    <li><a href="RWBYchat.html">Chat</a></li>
+                
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="login" href="RWBYlogin.html">Log in</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div ng-controller="UserCtrl">
+        <form ng-submit="signInUser()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" ng-model="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" ng-model="password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default">logga in</button>
+        </form>
+        <br>
+        
+        <div ng-if="firebaseUser">
+            <p>Välkommen {{ firebaseUser.email }}</p>
+            <button ng-click="auth.$signOut()">Sign Out</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form ng-submit="createUser()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" ng-model="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" ng-model="password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default">Create account</button>
+        </form>
+        </div>
+
+</body>
+</html>
