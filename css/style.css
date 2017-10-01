@@ -13,6 +13,10 @@ body {
 	left: 750px;*/
 }
 
+#chattext {
+	color: midnightblue;
+}
+
 h4{
 color: black;
 }
@@ -29,7 +33,7 @@ color: black;
 
 #bild {
 	position: absolute;
-	top: -530px;
+	top: -705px;
 	left: 850px;
 	width: 350px;
 }
@@ -54,6 +58,10 @@ position: absolute;
 
 #lenk4 {
 	color: yellow;
+}
+
+#lenk5 {
+	color: #fbf797;
 }
 
 #login {
