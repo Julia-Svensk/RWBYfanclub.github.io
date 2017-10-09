@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <!-- Alla element ska finnas inom html-taggen -->
 <html>
@@ -6,8 +5,6 @@
 <head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-
-<link rel="icon" type="image/png" href="bilder/rwby4.png">
 
 <!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
@@ -19,7 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Koppla in Bootstrap css -->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link rel="icon" type="image/png" href="bilder/rwby4.png">    <!-- Koppla in Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
     <link rel="stylesheet" type ="text/css" href="css/style.css">
@@ -32,11 +30,11 @@
     <script type="text/javascript" src="js/funktion.js"></script>
 
     <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
-    <title>RWBY log in</title>
+    <title>RWBY Music</title>
 </head>
 
 <!-- I body finns allt innehåll på hemsidan -->
-<body ng-app="app">
+<body>
 
    <nav class="nav navbar-inverse navbar-static-top">
             <div class="container">
@@ -46,51 +44,41 @@
                     <li><a href="RWBYChibbi.html">Chibi episodes</a></li>
                     <li><a href="RWBYmusic.html">Music</a></li>
                     <li><a href="RWBYchat.html">Chat</a></li>
-                
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="login" href="RWBYlogin.html">Log in</a></li>
-                </ul>
+                <li><a id="login" href="RWBYlogin.html">Log in</a></li>
             </div>
 
         </nav>
 
-        <div ng-controller="UserCtrl">
-        <form ng-submit="signInUser()">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" ng-model="email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" ng-model="password" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">logga in</button>
-        </form>
-        <br>
-        
-        <div ng-if="firebaseUser">
-            <p>Välkommen {{ firebaseUser.email }}</p>
-            
-            <button ng-click="auth.$signOut()">Sign Out</button>
+    <div class="col-sm-12 float-left">
+        <a id="lenk" href="RWBYvol31.html">Volume 1</a>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <form ng-submit="createUser()">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" ng-model="email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" ng-model="password" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">Create account</button>
-        </form>
+
+    <div class="col-sm-12 float-left">
+        <a id="lenk2" href="RWBYvol32.html">Volume 2</a>
         </div>
-        <if>
+
+    <div class="col-sm-12 float-left">
+        <a id="lenk3" href="RWBYvol33.html">Volume 3</a>
+        </div>
+
+<br>
+
+<iframe width="260" height="115" src="https://www.youtube.com/embed/RCBupigm7tU" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/BKXhmK4SYmk" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/7o_LmTfARno" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/TiWF_vmJyiI" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/POoeN5v2U6Y" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/cvnmpsWTsBo" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/MWA6YlVMwqQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="115" src="https://www.youtube.com/embed/GJhiD4jvjo4" frameborder="0" allowfullscreen></iframe>
+
+
+    <div class="col-sm-12 float-left">
+        <a id="lenk5" href="RWBYvol35.html">Volume 5</a>
+        </div>
+
 
 </body>
 </html>

@@ -64,9 +64,6 @@ position: absolute;
 	color: #fbf797;
 }
 
-#login {
-	color: lightblue;
-}
 
 #chat {
 	margin: 20px;
@@ -81,4 +78,106 @@ position: absolute;
 	background-color: white;
 	border: white 5px solid;
 
+}
+
+.parallax {
+    min-height: 720px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#extrabild3{
+    background-image: url("../bilder/extrabild3.jpg");
+}
+
+#extrabild5{
+    background-image: url("../bilder/extrabild5.jpg");
+    size: 200%
+
+}
+
+.glyphicon{
+	font-size: 55px;
+	color:	#345678;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.redbox {
+    position: absolute;
+    top: 330px;
+    background: #b6313e;
+    margin-left:50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    border: 1px solid #b6313e;
+}
+
+#amino {
+color: darkred ;
+}
+
+#rad {
+	color: darkred;
+}
+
+.whitebox {
+    position: absolute;
+    top: 900px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-left:50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.caption2 {
+    position: absolute;
+    left: 0;
+    top: 115%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption2 span.bord {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.caption3 {
+    position: absolute;
+    left: 0;
+    top: 128%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption3 span.borde {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
