@@ -83,7 +83,6 @@ app.controller("UserCtrl", ["$scope", "Auth",
 
         $scope.auth.$onAuthStateChanged(function(firebaseUser) {
 
-            alert("Update");
             $scope.firebaseUser = firebaseUser;
             console.log(firebaseUser);
         });
