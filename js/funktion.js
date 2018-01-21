@@ -60,7 +60,7 @@ app.controller("UserCtrl", ["$scope", "Auth",
             // Create a new user
             Auth.$signInWithEmailAndPassword($scope.email, $scope.password)
                 .then(function(firebaseUser) {
-                    alert("Du är inloggad! Yey");
+                    alert("You have signed in! Yey!!");
                     $scope.message = "User signed in with uid: " + firebaseUser.uid;
                 }).catch(function(error) {
                     $scope.error = error;

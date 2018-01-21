@@ -200,9 +200,19 @@ text-shadow: 0 1px 0 #c73232,
 
 #mobilbild {
     width:  800px
-
 }
 
 #mbild2 {
     width: 220px
+}
+
+.bilder {
+     border-radius: 10%;
+}
+
+#musikbild {
+position: absolute;
+    top: 80px;
+    left: 600px;
+width: 700px;
 }
