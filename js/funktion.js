@@ -17,7 +17,10 @@ app.factory("kommentarer", function($firebaseArray) {
     return $firebaseArray(ref);
   }
 );
+function comment {
+    alert(Anyone who sign in can see your comment! Are you sure you want to comment anyway?)
 
+if (true) {
 // Här i "controllern" så kan vi bestämma vad som ska hända med vår HTML
 app.controller("KommentarCtrl", function($scope, kommentarer) {
     // Vi gör så att vi kan komma åt inläggen i kommentarer-fabriken med ng-model
@@ -41,6 +44,12 @@ app.controller("KommentarCtrl", function($scope, kommentarer) {
     };
   }
 );
+}
+
+else {
+
+}
+}
 
 // let's create a re-usable factory that generates the $firebaseAuth instance
 app.factory("Auth", ["$firebaseAuth",
@@ -88,3 +97,4 @@ app.controller("UserCtrl", ["$scope", "Auth",
         });
     }
 ]);
+
